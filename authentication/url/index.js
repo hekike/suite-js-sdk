@@ -30,6 +30,9 @@ SuiteSignedUrlAuthenticator.prototype = {
     } catch (ex) {
       err = new Error('Escher authentication');
       err.reason = ex.message;
+
+      console.log(ex);
+
       throw err;
     }
   },
